@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NxtPrep - Interview Assistant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        NxtPrep
+      </div>
+      <button class="logout">Logout</button>
+    </header>
+    <div class="main-container">
+      <div class="faq-container">
+        <p class="faq-heading">Frequently Asked Questions</p>
+        <div id="faqListContainer"></div>
+      </div>
+      <main class="main-content">
+        <div class="chat-container" id="chatContainer">
+          <div class="message user-message">
+            <div class="user-profile">
+              <i class="fas fa-user user-icon"></i>
+            </div>
+            <div class="message-content">
+              <p>Hi, I need help preparing for my interview!</p>
+            </div>
+          </div>
+          <div class="message ai-message">
+            <div class="robo-icon">
+              <i class="fas fa-robot robot-icon"></i>
+            </div>
+            <div class="message-content">
+              <p>
+                Hello! I'm here to help you prepare for your interview. Feel
+                free to ask me about any specific topics or practice questions
+                you'd like to cover.
+              </p>
+              <button class="speak-btn">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="input-area">
+          <div class="input-container">
+            <input
+              type="text"
+              id="messageInput"
+              class="message-input"
+              placeholder="Ask your interview preparation questions..."
+            />
+            <button class="send-button" id="sendButton">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
