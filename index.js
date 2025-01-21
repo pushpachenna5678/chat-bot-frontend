@@ -1,4 +1,4 @@
-const fqsApiUrl = "http://127.0.0.1:5000/faqs";
+const fqsApiUrl = "https://99703dmix9.execute-api.ap-south-1.amazonaws.com/dev";
 
 const API_KEY = "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";
 const groqApiUrl = "https://api.groq.com/openai/v1/chat/completions";
